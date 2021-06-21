@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Scripts</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+if (5 >= 10) {
+    alert("False");
+} else {
+    alert("True");
+}
+
+    </script>
+
+</head>
+<body>
+    <h2>We can add inline java within the element where we want to execute our java code</h2>
+    <h2>internal java is written between Script tag the condition is that it should be in Html head element </h2>
+    <h2>in external java we make a seperate file outside of html and link the file into html either between the head <br>
+        or the end to body tag.The best practice is to link java in the end of body tag.
+     </h2>
+    
+    <a href="#" onClick="(function(){
+        alert('Hey i am calling');
+        return false;
+    })();return false;">click here</a>
+ 
+    <script src="app.js"></script>
+</body>
+</html>
